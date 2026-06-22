@@ -5,6 +5,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import GrainOverlay from '@/components/GrainOverlay';
 import CursorGlow from '@/components/CursorGlow';
+import ScissorCursor from '@/components/ScissorCursor';
 import SmoothScroll from '@/components/SmoothScroll';
 
 const fraunces = Fraunces({
@@ -46,6 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-ink text-bone">
         <SmoothScroll />
         <CursorGlow />
+        <ScissorCursor />
         <GrainOverlay />
         <Navigation />
         <main className="relative">{children}</main>
